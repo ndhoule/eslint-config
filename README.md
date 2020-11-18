@@ -1,0 +1,1 @@
+# `@ndhoule/eslint-config`
