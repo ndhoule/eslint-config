@@ -2,6 +2,7 @@ module.exports = {
   plugins: ["eslint-comments", "import", "prettier"],
   extends: [
     "eslint:recommended",
+    "problems",
     "plugin:eslint-comments/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -28,5 +29,8 @@ module.exports = {
     // `return await` is almost always a mistake. The only time when it's acceptable is within a
     // `try` block (which this rule permits).
     "no-return-await": "error",
+    // Enabled by eslint-config-problems; because it's enabled automatically by tools like
+    // TypeScript, Babel/Webpack, etc., it's generally not necessary to enable it explicitly.
+    strict: "off",
   },
 };
