@@ -35,8 +35,5 @@ module.exports = {
     // Disallow non-boolean values in boolean expressions (comparisons to a boolean, conditionals in
     // ternaries/if/while/etc.)
     "@typescript-eslint/strict-boolean-expressions": "error",
-
-    // "@typescript-eslint/": "error",
-    //no-use-before-define
   },
 };
