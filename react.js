@@ -6,8 +6,8 @@ module.exports = {
     },
   },
   extends: [
-    "plugin:react-hooks/recommended",
     "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
 
     "plugin:prettier/recommended", // Must be last
   ],
