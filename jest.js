@@ -12,9 +12,9 @@ module.exports = {
       {
         // Tests against boolean values should assert true or false. Asserting toBeTruthy or
         // toBeFalsy matches non-boolean values as well and encourages weaker tests.
-        "toBeFalsy": "Avoid `toBeFalsy`",
-        "toBeTruthy": "Avoid `toBeTruthy`",
-      }
+        toBeFalsy: "Avoid `toBeFalsy`",
+        toBeTruthy: "Avoid `toBeTruthy`",
+      },
     ],
     // Tests in Jest should return void. The only case where you might want to return a value in a
     // Jest test is returning a promise; in that case, using async/await is preferred.

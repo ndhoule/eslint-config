@@ -16,7 +16,8 @@ module.exports = {
         // Ignore unused arguments that are prefixed with an underscore; naming unused variables is
         // sometimes helpful for forcing variadic functions to behave the way you want, or for
         // documenting arguments that are likely to come into use in the future
-        args: "after-used", argsIgnorePattern: "^_",
+        args: "after-used",
+        argsIgnorePattern: "^_",
       },
     ],
 
