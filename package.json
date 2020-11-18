@@ -1,6 +1,8 @@
 {
   "name": "@ndhoule/eslint-config",
   "version": "1.0.0",
+  "description": "Reusable common TypeScript configurations",
+  "repository": "https://github.com/ndhoule/eslint-config",
   "author": "Nathan Houle <nathan@nathanhoule.com>",
   "license": "MIT",
   "scripts": {
