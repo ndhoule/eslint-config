@@ -25,6 +25,12 @@ module.exports = {
         argsIgnorePattern: "^_",
       },
     ],
+    // FIXME(ndhoule): enabled by eslint-config-problems. Unfortunately, an issue in
+    // @typescript-eslint/eslint-config prevents this rule from being applied consistently across
+    // both JavaScript and TypeScript, so it's disabled for now. Enable this and the matching
+    // TypeScript rule when the issue is fixed:
+    // https://github.com/typescript-eslint/typescript-eslint/issues/1856
+    "no-use-before-define": "off",
     "no-useless-constructor": "error",
     // `return await` is almost always a mistake. The only time when it's acceptable is within a
     // `try` block (which this rule permits).
