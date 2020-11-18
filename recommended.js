@@ -15,6 +15,26 @@ module.exports = {
     // reintroducing a bad pattern that was previously fixed but where the directive was left in
     // place.
     "eslint-comments/no-unused-disable": "error",
+    // Enforce consistency in where import groups appear. The linter should jsut take care of this
+    // kind of thing.
+    "import/first": "error",
+    // Enforce conventions around import groups. (Source files like js, ts shouldn't require an
+    // extension while assets like json, image files, etc. should.) Another thing the linter should
+    // just take care of for you.
+    "import/extensions": ["error", "never", { json: "always" }],
+    // Enforce conventions around import groups. The linter should just take care of this kind of
+    // thing.
+    "import/newline-after-import": "error",
+    // Enforce conventions around import group ordering. The linter should just take care of this
+    // kind of thing.
+    "import/order": [
+      "error",
+      {
+        alphabetize: { order: "asc" },
+        groups: ["builtin", "external", "parent", "sibling", "index"],
+        "newlines-between": "never",
+      },
+    ],
     "no-unused-vars": [
       "error",
       {
