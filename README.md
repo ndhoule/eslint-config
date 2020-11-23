@@ -29,7 +29,8 @@ You will also need to install `react` and `typescript` if you're using those con
 - `@ndhoule/eslint-config/react`: A configuration for React components/applications.
 - `@ndhoule/eslint-config/react/typescript`: A configuration for React components/applications with TypeScript-specific rules enabled.
 - `@ndhoule/eslint-config/typescript`: A configuration for TypeScript files. 
-- `@ndhoule/eslint-config/testing-library`: A configuration for [testing-library](https://testing-library.com/) tests. 
+- `@ndhoule/eslint-config/testing-library`: A configuration for [Testing Library](https://testing-library.com/) tests.
+- `@ndhoule/eslint-config/testing-library/react`: A configuration for [Testing Library React](https://testing-library.com/docs/react-testing-library/intro/) tests.
 
 ## Usage
 
