@@ -55,6 +55,17 @@ module.exports = {
     // `return await` is almost always a mistake. The only time when it's acceptable is within a
     // `try` block (which this rule permits).
     "no-return-await": "error",
+    // Sort import members (and destructured `require`s) alphabetically for consistency.
+    // (For declaration sorting, see `import/order`, which does a more comprehensive job of sorting
+    // import declarations.)
+    "sort-imports": [
+      "error",
+      {
+        ignoreCase: false,
+        ignoreDeclarationSort: true,
+        ignoreMemberSort: false,
+      },
+    ],
     // Enabled by eslint-config-problems; because it's enabled automatically by tools like
     // TypeScript, Babel/Webpack, etc., it's generally not necessary to enable it explicitly.
     strict: "off",
