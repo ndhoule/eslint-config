@@ -23,6 +23,7 @@ You will also need to install `react` and `typescript` if you're using those con
 - `@ndhoule/eslint-config/jest`: A configuration for Jest tests.
 - `@ndhoule/eslint-config/react`: A configuration for React components/applications.
 - `@ndhoule/eslint-config/typescript`: A configuration for TypeScript files. 
+- `@ndhoule/eslint-config/testing-library`: A configuration for [testing-library](https://testing-library.com/) tests. 
 
 ## Usage
 
@@ -36,7 +37,7 @@ module.exports = {
   overrides: [
     // TypeScript files
     {
-      files: ["src/**/*.ts"],
+      files: ["src/**/*.ts", "src/**/*.tsx"],
       parserOptions: {
         tsconfigRootDir: __dirname,
         project: "./tsconfig.json",
@@ -47,6 +48,14 @@ module.exports = {
     {
       files: ["src/**/*.test.js", "src/**/*.test.ts"],
       extends: ["@ndhoule/eslint-config/jest"],
+    },
+    // React tests
+    {
+      files: ["src/**/*.test.jsx", "src/**/*.test.tsx"],
+      extends: [
+        "@ndhoule/eslint-config/jest",
+        "@ndhoule/eslint-config/testing-library/react",
+      ],
     },
   ],
 };
