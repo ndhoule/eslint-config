@@ -2,7 +2,12 @@
 
 An opinionated but flexible set of ESLint configurations.
 
-These configurations are mostly composed out of other plugins' recommended configuration sets. It bundles various ESLint plugins, reducing the amount of dependencies you need to manage within your project; it also takes care of some boilerplate configuration, enables some less controversial rules that aren't enabled by default, and smoothes out common conflicts between plugin rules.
+This configuration:
+
+- Is mostly composed out of other plugins' recommended configuration sets. It further enables some (hopefully uncontroversial) rules that catch common gotchas and improve consistency.
+- Aggressively enables rules that produce consistent style. It assumes you're using Prettier to style your code, and further enables rules that free developers up from style (sorting import declarations and members, etc.).
+- Centralizes installation and maintenance of ESLint plugins as much as possible. Rather than installing, configuring, and maintaining a ton of ESLint plugins, install one package.
+- Reduces boilerplate by smoothing out common conflicts between plugins.
 
 ## Installation
 
