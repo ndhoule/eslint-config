@@ -35,6 +35,8 @@ module.exports = {
         "newlines-between": "never",
       },
     ],
+    // Strip path segments that don't modify the final import, e.g. "./..//app" => "../app"
+    "import/no-useless-path-segments": "error",
     "no-unused-vars": [
       "error",
       {
