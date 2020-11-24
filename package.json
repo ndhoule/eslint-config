@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@ndhoule/eslint-config": "file:./",
-    "@ndhoule/prettier-config": "^1.0.0",
     "eslint": "^7.13.0",
     "prettier": "2.1.2"
   },
