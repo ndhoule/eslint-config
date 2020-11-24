@@ -27,10 +27,10 @@ You will also need to install `react` and `typescript` if you're using those con
 - `@ndhoule/eslint-config/recommended`: A base configuration that enforces best practices. You probably want this rule set enabled at the root of your configuration.
 - `@ndhoule/eslint-config/jest`: A configuration for Jest tests.
 - `@ndhoule/eslint-config/lodash`: A configuration for [Lodash](https://lodash.com/). You may need to configure the `eslint-plugin-lodash` plugin; consult its [documentation](https://github.com/wix/eslint-plugin-lodash/) for more information.
+- `@ndhoule/eslint-config/react`: A configuration for React components/applications. You may need to configure the `eslint-plugin-react` plugin; consult its [documentation](https://github.com/yannickcr/eslint-plugin-react) for more information.
 - `@ndhoule/eslint-config/react/typescript`: A configuration for React components/applications with TypeScript-specific rules enabled.
-- `@ndhoule/eslint-config/react`: You may need to configure the `eslint-plugin-react` plugin; consult its [documentation](https://github.com/yannickcr/eslint-plugin-react) for more information.
-- `@ndhoule/eslint-config/testing-library/react`: A configuration for [Testing Library React](https://testing-library.com/docs/react-testing-library/intro/) tests.
 - `@ndhoule/eslint-config/testing-library`: A configuration for [Testing Library](https://testing-library.com/) tests.
+- `@ndhoule/eslint-config/testing-library/react`: A configuration for [Testing Library React](https://testing-library.com/docs/react-testing-library/intro/) tests.
 - `@ndhoule/eslint-config/typescript`: A configuration for TypeScript files.
 
 ## Usage
