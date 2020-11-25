@@ -10,7 +10,7 @@ module.exports = {
     "prettier/@typescript-eslint", // Must be last
   ],
   rules: {
-    // Set to match `recommended` configuration
+    // Set to match `@ndhoule/eslint-config/recommended` configuration
     "@typescript-eslint/no-unused-vars": [
       "error",
       { args: "after-used", argsIgnorePattern: "^_" },
