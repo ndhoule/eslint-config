@@ -27,5 +27,6 @@ module.exports = {
     // thrown; asserting a test message ensures that unexpected errors don't falsely cause your
     // test to pass.
     "jest/require-to-throw-message": "error",
+    "jest/valid-title": ["error", { mustNotMatch: { it: "^it" } }],
   },
 };
