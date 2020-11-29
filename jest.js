@@ -5,8 +5,9 @@ module.exports = {
     "jest/globals": true,
   },
   rules: {
-    // Lowercase test names read better in the Jest output summary.
-    "jest/lowercase-name": "warn",
+    // Lowercase test names read better in the Jest output summary. Ignore top-level `describe`
+    // blocks, which often contain the name of e.g. classes, etc. (e.g. `describe("LRUCache", ...)`)
+    "jest/lowercase-name": ["error", { ignoreTopLevelDescribe: true }],
     "jest/no-restricted-matchers": [
       "error",
       {
