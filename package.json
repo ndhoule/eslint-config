@@ -32,11 +32,15 @@
   },
   "peerDependencies": {
     "eslint": ">=7.10.0 <8",
+    "lodash": ">=4",
     "prettier": ">=2 <3",
     "react": ">=16",
     "typescript": ">=3.7"
   },
   "peerDependenciesMeta": {
+    "lodash": {
+      "optional": true
+    },
     "react": {
       "optional": true
     },
