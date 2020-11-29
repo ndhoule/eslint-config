@@ -10,6 +10,7 @@ module.exports = {
     "prettier/@typescript-eslint", // Must be last
   ],
   rules: {
+    "@typescript-eslint/explicit-member-accessibility": "error",
     // Set to match `@ndhoule/eslint-config/recommended` configuration
     "@typescript-eslint/no-unused-vars": [
       "error",
