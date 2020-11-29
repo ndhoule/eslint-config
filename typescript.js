@@ -30,6 +30,23 @@ module.exports = {
     // stylistic consistency and to avoid functions that can return both a promise and a non-promise
     // value (e.g. in a conditional).
     "@typescript-eslint/promise-function-async": "error",
+    // This rule is set in `@typescript-eslint/eslint-recommended`; by default, that configuration
+    // allows the use of numbers in template expressions. However, one of the most--if not *the*
+    // most--common reasons for converting a number to a string is to show it to a user. In this
+    // scenario, consistency in string formatting is key: when displaying money, you generally
+    // either want to consistently show cents or not, and you may or may not want to round numbers
+    // (or round them to a fixed precision). Allowing numbers in template strings without calling
+    // attention to their formatting is a footgun, so here we prohibit it, knowing that the
+    // worse-case alternative is not bad (forcing users to call `toString()` on their number).
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        allowNumber: false,
+        allowBoolean: false,
+        allowAny: false,
+        allowNullish: false,
+      },
+    ],
     // Prohibit `return await` (see `recommended` configuration for details).
     "no-return-await": "off",
     "@typescript-eslint/return-await": "error",
