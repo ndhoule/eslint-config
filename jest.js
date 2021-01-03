@@ -1,9 +1,6 @@
 module.exports = {
   plugins: ["jest"],
   extends: ["plugin:jest/recommended", "plugin:jest/style"],
-  env: {
-    "jest/globals": true,
-  },
   rules: {
     // Lowercase test names read better in the Jest output summary. Ignore top-level `describe`
     // blocks, which often contain the name of e.g. classes, etc. (e.g. `describe("LRUCache", ...)`)
