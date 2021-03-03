@@ -7,7 +7,7 @@ module.exports = {
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "plugin:import/typescript",
 
-    "prettier/@typescript-eslint", // Must be last
+    "plugin:prettier/recommended", // Must be last
   ],
   rules: {
     "@typescript-eslint/explicit-member-accessibility": "error",
