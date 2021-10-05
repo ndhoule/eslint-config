@@ -27,6 +27,9 @@ You will also need to install `react` and `typescript` if you're using those con
 - `@ndhoule/eslint-config/recommended`: A base configuration that enforces best practices. You probably want this rule set enabled at the root of your configuration.
 - `@ndhoule/eslint-config/jest`: A configuration for Jest tests.
 - `@ndhoule/eslint-config/lodash`: A configuration for [Lodash](https://lodash.com/). You may need to configure the `eslint-plugin-lodash` plugin; consult its [documentation](https://github.com/wix/eslint-plugin-lodash/) for more information.
+- `@ndhoule/eslint-config/node`: A configuration for files run in a Node runtime.
+- `@ndhoule/eslint-config/node/babel`: A configuration for files run in a Node runtime that are first transpiled via Babel (or a similar transpiler like TSC).
+- `@ndhoule/eslint-config/node/typescript`: A configuration for TypeScript files run in a Node runtime.
 - `@ndhoule/eslint-config/react`: A configuration for React components/applications. You may need to configure the `eslint-plugin-react` plugin; consult its [documentation](https://github.com/yannickcr/eslint-plugin-react) for more information.
 - `@ndhoule/eslint-config/react/typescript`: A configuration for React components/applications with TypeScript-specific rules enabled.
 - `@ndhoule/eslint-config/testing-library`: A configuration for [Testing Library](https://testing-library.com/) tests.
