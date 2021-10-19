@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["a11y", "prettier", "react", "react-hooks", "import-jsx"],
+  plugins: ["import", "jsx-a11y", "prettier", "react", "react-hooks"],
   settings: {
     react: {
       version: "detect",
