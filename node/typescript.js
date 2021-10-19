@@ -1,8 +1,3 @@
 module.exports = {
-  overrides: [
-    {
-      files: ["*.ts"],
-      extends: ["@ndhoule/eslint-config/node/babel"],
-    },
-  ],
+  extends: ["@ndhoule/eslint-config/node", "@ndhoule/eslint-config/node/babel"],
 };
