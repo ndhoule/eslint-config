@@ -1,5 +1,5 @@
 module.exports = {
-  plugins: ["eslint-comments", "import", "prettier"],
+  plugins: ["eslint-comments", "import", "prettier", "unicorn"],
   extends: [
     "eslint:recommended",
     "problems",
@@ -85,5 +85,7 @@ module.exports = {
     // tools like TypeScript, Babel/Webpack, etc., it's generally not necessary
     // to enable it explicitly.
     strict: "off",
+
+    "unicorn/expiring-todo-comments": "error",
   },
 };
