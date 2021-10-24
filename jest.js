@@ -5,7 +5,9 @@ module.exports = {
     // Lowercase test names read better in the Jest output summary. Ignore
     // top-level `describe` blocks, which often contain the name of e.g.
     // classes, etc. (e.g. `describe("LRUCache", ...)`)
-    "jest/lowercase-name": ["error", { ignoreTopLevelDescribe: true }],
+    //
+    // https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/prefer-lowercase-title.md
+    "jest/prefer-lowercase-title": ["error", { ignore: ["describe"] }],
 
     "jest/no-restricted-matchers": [
       "error",
