@@ -69,6 +69,10 @@ module.exports = {
     // acceptable is within a `try` block (which this rule permits).
     "no-return-await": "error",
 
+    // This rule is pretty broken; for more info, see:
+    // https://github.com/eslint/eslint/issues/11899
+    "require-atomic-updates": "off",
+
     // Sort import members (and destructured `require`s) alphabetically for
     // consistency. (For declaration sorting, see `import/order`, which does a
     // more comprehensive job of sorting import declarations.)
