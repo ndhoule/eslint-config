@@ -65,6 +65,23 @@ module.exports = {
 
     "no-useless-constructor": "error",
 
+    "no-restricted-globals": [
+      "error",
+      {
+        name: "isNaN",
+        message:
+          "Prefer Number.isNaN over the global isNaN. (isNaN coerces a non-numeric value to a number before performing its comparsion, which is confusing in the general case. If you intend to coerce the value to a number before performing the NaN check, explicitly cast the value first.)",
+      },
+      {
+        name: "parseFloat",
+        message: "Prefer Number.parseFloat over the global parseFloat.",
+      },
+      {
+        name: "parseInt",
+        message: "Prefer Number.parseInt over the global parseInt.",
+      },
+    ],
+
     // `return await` is almost always a mistake. The only time when it's
     // acceptable is within a `try` block (which this rule permits).
     "no-return-await": "error",
