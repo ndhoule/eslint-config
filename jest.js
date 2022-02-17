@@ -20,6 +20,25 @@ module.exports = {
       },
     ],
 
+    // Enabled in the recommended ruleset, but overridden to support
+    // jest-fast-check it()/test() functions
+    // https://github.com/dubzzz/jest-fast-check/
+    "jest/no-standalone-expect": [
+      "error",
+      {
+        additionalTestBlockFunctions: [
+          "itProp",
+          "itProp.only",
+          "itProp.skip",
+          "itProp.todo",
+          "testProp",
+          "testProp.only",
+          "testProp.skip",
+          "testProp.todo",
+        ],
+      },
+    ],
+
     // Tests in Jest should return void. The only case where you might want to
     // return a value in a Jest test is returning a promise; in that case, using
     // async/await is preferred.
