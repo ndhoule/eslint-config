@@ -32,6 +32,7 @@ You will also need to install `react` and `typescript` if you're using those con
 - `@ndhoule/eslint-config/node/typescript`: A configuration for TypeScript files run in a Node runtime.
 - `@ndhoule/eslint-config/react`: A configuration for React components/applications. You may need to configure the `eslint-plugin-react` plugin; consult its [documentation](https://github.com/yannickcr/eslint-plugin-react) for more information.
 - `@ndhoule/eslint-config/react/typescript`: A configuration for React components/applications with TypeScript-specific rules enabled.
+- `@ndhoule/eslint-config/react/jsx-runtime`: A configuration for React applications that use the [JSX transform](https://reactjs.org/blog/2020/09/22/introducing-the-new-jsx-transform.html).
 - `@ndhoule/eslint-config/testing-library`: A configuration for [Testing Library](https://testing-library.com/) tests.
 - `@ndhoule/eslint-config/testing-library/react`: A configuration for [Testing Library React](https://testing-library.com/docs/react-testing-library/intro/) tests.
 - `@ndhoule/eslint-config/typescript`: A configuration for TypeScript files.
