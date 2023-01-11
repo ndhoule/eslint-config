@@ -46,12 +46,6 @@ module.exports = {
     // https://typescript-eslint.io/rules/no-confusing-non-null-assertion
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
 
-    // https://typescript-eslint.io/rules/no-implicit-any-catch
-    "@typescript-eslint/no-implicit-any-catch": [
-      "error",
-      { allowExplicitAny: false },
-    ],
-
     // https://typescript-eslint.io/rules/no-invalid-void-type
     "@typescript-eslint/no-invalid-void-type": [
       "error",
