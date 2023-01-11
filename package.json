@@ -1,6 +1,6 @@
 {
   "name": "@ndhoule/eslint-config",
-  "version": "8.0.0-0",
+  "version": "8.0.0-1",
   "description": "An opinionated but flexible set of ESLint configurations.",
   "repository": "https://github.com/ndhoule/eslint-config",
   "author": "Nathan Houle <nathan@nathanhoule.com>",
