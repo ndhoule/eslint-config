@@ -10,7 +10,7 @@ module.exports = {
     "plugin:prettier/recommended", // Must be last
   ],
   rules: {
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/ban-ts-comment.md
+    // https://typescript-eslint.io/rules/ban-ts-comment
     "@typescript-eslint/ban-ts-comment": [
       "error",
       {
@@ -21,7 +21,7 @@ module.exports = {
       },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/consistent-type-assertions.md
+    // https://typescript-eslint.io/rules/consistent-type-assertions
     "@typescript-eslint/consistent-type-assertions": [
       "error",
       {
@@ -30,25 +30,29 @@ module.exports = {
       },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/explicit-member-accessibility.md
+    // https://typescript-eslint.io/rules/dot-notation
+    "dot-notation": "off",
+    "@typescript-eslint/dot-notation": "error",
+
+    // https://typescript-eslint.io/rules/explicit-member-accessibility
     "@typescript-eslint/explicit-member-accessibility": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-base-to-string.md
+    // https://typescript-eslint.io/rules/no-base-to-string
     "@typescript-eslint/no-base-to-string": [
       "error",
       { ignoredTypeNames: ["RegExp"] },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-confusing-non-null-assertion.md
+    // https://typescript-eslint.io/rules/no-confusing-non-null-assertion
     "@typescript-eslint/no-confusing-non-null-assertion": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-implicit-any-catch.md
+    // https://typescript-eslint.io/rules/no-implicit-any-catch
     "@typescript-eslint/no-implicit-any-catch": [
       "error",
       { allowExplicitAny: false },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-invalid-void-type.md
+    // https://typescript-eslint.io/rules/no-invalid-void-type
     "@typescript-eslint/no-invalid-void-type": [
       "error",
       {
@@ -59,7 +63,7 @@ module.exports = {
 
     // Set to match `@ndhoule/eslint-config/recommended` configuration
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-unused-vars.md
+    // https://typescript-eslint.io/rules/no-unused-vars
     "@typescript-eslint/no-unused-vars": [
       "error",
       { args: "after-used", argsIgnorePattern: "^_" },
@@ -68,24 +72,24 @@ module.exports = {
     // Empty interfaces are often useful for module interfaces you expect to
     // grow over time, like program arguments, React props, etc.
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-empty-interface.md
+    // https://typescript-eslint.io/rules/no-empty-interface
     "@typescript-eslint/no-empty-interface": "off",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-meaningless-void-operator.md
+    // https://typescript-eslint.io/rules/no-meaningless-void-operator
     "@typescript-eslint/no-meaningless-void-operator": [
       "error",
       { checkNever: false },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-non-null-asserted-nullish-coalescing.md
+    // https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing
     "@typescript-eslint/no-non-null-asserted-nullish-coalescing": "error",
 
     // Restrict `throw` to Error objects
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-throw-literal.md
+    // https://typescript-eslint.io/rules/no-throw-literal
     "@typescript-eslint/no-throw-literal": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-unnecessary-condition.md
+    // https://typescript-eslint.io/rules/no-unnecessary-condition
     "@typescript-eslint/no-unnecessary-condition": [
       "error",
       {
@@ -93,41 +97,41 @@ module.exports = {
       },
     ],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-unsafe-argument.md
+    // https://typescript-eslint.io/rules/no-unsafe-argument
     "@typescript-eslint/no-unsafe-argument": "error",
 
     // Prohibit empty class constructors
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/no-useless-constructor.md
+    // https://typescript-eslint.io/rules/no-useless-constructor
     "no-useless-constructor": "off",
     "@typescript-eslint/no-useless-constructor": ["error"],
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/non-nullable-type-assertion-style.md
+    // https://typescript-eslint.io/rules/non-nullable-type-assertion-style
     "@typescript-eslint/non-nullable-type-assertion-style": "error",
 
     // Prohibit casting the initial value in Array#reduce calls (a very common
     // antipattern).
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/prefer-reduce-type-parameter.md
+    // https://typescript-eslint.io/rules/prefer-reduce-type-parameter
     "@typescript-eslint/prefer-reduce-type-parameter": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/prefer-for-of.md
+    // https://typescript-eslint.io/rules/prefer-for-of
     "@typescript-eslint/prefer-for-of": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/prefer-enum-initializers.md
+    // https://typescript-eslint.io/rules/prefer-enum-initializers
     "@typescript-eslint/prefer-enum-initializers": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/prefer-nullish-coalescing.md
+    // https://typescript-eslint.io/rules/prefer-nullish-coalescing
     "@typescript-eslint/prefer-nullish-coalescing": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/prefer-optional-chain.md
+    // https://typescript-eslint.io/rules/prefer-optional-chain
     "@typescript-eslint/prefer-optional-chain": "error",
 
     // Require functions capable of returning a promise to be marked as `async`.
     // Helps to improve stylistic consistency and to avoid functions that can
     // return both a promise and a non-promise value (e.g. in a conditional).
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/promise-function-async.md
+    // https://typescript-eslint.io/rules/promise-function-async
     "@typescript-eslint/promise-function-async": "error",
 
     // This rule is set in `@typescript-eslint/eslint-recommended`; by default,
@@ -142,33 +146,34 @@ module.exports = {
     // worse-case alternative is not bad (forcing users to call `toString()` on
     // their number).
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/restrict-template-expressions.md
+    // https://typescript-eslint.io/rules/restrict-template-expressions
     "@typescript-eslint/restrict-template-expressions": [
       "error",
       {
-        allowNumber: false,
-        allowBoolean: false,
         allowAny: false,
+        allowBoolean: false,
         allowNullish: false,
+        allowNumber: false,
+        allowRegExp: false,
       },
     ],
 
     // Prohibit `return await` (see `recommended` configuration for details).
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/return-await.md
+    // https://typescript-eslint.io/rules/return-await
     "no-return-await": "off",
     "@typescript-eslint/return-await": "error",
 
     // Disallow non-boolean values in boolean expressions (comparisons to a
     // boolean, conditionals in ternaries/if/while/etc.)
     //
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/strict-boolean-expressions.md
+    // https://typescript-eslint.io/rules/strict-boolean-expressions
     "@typescript-eslint/strict-boolean-expressions": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/switch-exhaustiveness-check.md
+    // https://typescript-eslint.io/rules/switch-exhaustiveness-check
     "@typescript-eslint/switch-exhaustiveness-check": "error",
 
-    // https://github.com/typescript-eslint/typescript-eslint/blob/HEAD/packages/eslint-plugin/docs/rules/unified-signatures.md
+    // https://typescript-eslint.io/rules/unified-signatures
     "@typescript-eslint/unified-signatures": "error",
 
     // The way Zapatos outputs this built schema file isn't compatible with how
